@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;700&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#d9d1d1, #f6cda3);
+    background-attachment: fixed; 
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    /* Tamaño del título */
+    text-align: center;
+    color: #4a4a4a;
+    padding-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor {
+    display: flex; /* Usar flexbox para alinear la lista y la imagen */
+    flex-direction: row; /* Alinear los elementos en fila */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    gap: 20px; /* Espaciado entre la lista y la imagen */
+}
+
+li, ul {
+    margin: 20px 0;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    line-height: 1;
+    flex: 2;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-right: 20px;
+}
+
+.imagen {
+    flex: 1; /* La imagen ocupa una fracción del espacio disponible */
+    width: 450px; /* Ajusta al tamaño que prefieras */
+    height: 450px; /* Tamaño cuadrado */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lista {
+    flex: 2; /* La lista ocupa más espacio en el contenedor */
+    font-size: 20px;
+    line-height: 1.8;
+    padding-left: 20px;
+}
